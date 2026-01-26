@@ -16,33 +16,32 @@
   <style>
 /* ====== BASE UI (ligero y veloz) ====== */
 :root{
-  /* ====== THEME (AJUSTADO AL LOGO JUAN TOYOTAS 4x4) ====== */
+  /* ====== THEME (PRO / MARKETINERO — ARMÓNICO AL LOGO JUAN TOYOTAS 4x4) ====== */
   --brand-1:#d61f1f;   /* Rojo Toyota */
   --brand-2:#ff7a00;   /* Naranja atardecer */
   --brand-3:#ffe2b8;   /* Crema / arena */
 
-  /* Fondo tipo "atardecer premium" (más claro y con impacto) */
-  --bg-solid:#120a08;
+  /* Fondo: limpio, premium y con contraste */
+  --bg-solid:#0b0f14;
   --bg-grad:
-    radial-gradient(1200px 820px at 14% 10%, rgba(255,122,0,.34) 0, transparent 58%),
-    radial-gradient(1100px 760px at 86% 18%, rgba(214,31,31,.26) 0, transparent 60%),
-    radial-gradient(980px 680px at 28% 92%, rgba(255,226,184,.22) 0, transparent 62%),
-    radial-gradient(900px 620px at 78% 88%, rgba(255,180,90,.16) 0, transparent 62%),
-    linear-gradient(135deg, rgba(255,255,255,.10) 0%, rgba(255,255,255,.03) 35%, rgba(255,255,255,.08) 100%),
-    linear-gradient(135deg, #2b1209 0%, #7a220f 38%, #ff7a00 100%);
+    radial-gradient(1200px 820px at 14% 10%, rgba(255,122,0,.32) 0, transparent 60%),
+    radial-gradient(1100px 760px at 86% 18%, rgba(214,31,31,.24) 0, transparent 62%),
+    radial-gradient(980px 680px at 28% 92%, rgba(255,226,184,.18) 0, transparent 64%),
+    linear-gradient(135deg, rgba(255,255,255,.10) 0%, rgba(255,255,255,.04) 40%, rgba(255,255,255,.08) 100%),
+    linear-gradient(135deg, #0b0f14 0%, #1c0f0a 45%, #ff7a00 125%);
 
-  --bg-deep:rgba(18,10,8,.62);   /* header */
+  --bg-deep:rgba(11,15,20,.70); /* header */
   --ink:#ffffff;
-  --muted:rgba(255,255,255,.88);
+  --muted:rgba(255,255,255,.84);
 
   --accent1:var(--brand-2);
   --accent2:var(--brand-3);
   --accent3:var(--brand-1);
 
-  --panel:rgba(255,255,255,.14);
-  --panel-strong:rgba(255,255,255,.18);
+  --panel:rgba(255,255,255,.11);
+  --panel-strong:rgba(255,255,255,.16);
   --panel-border:rgba(255,255,255,.22);
-  --shadow:rgba(0,0,0,.35);
+  --shadow:rgba(0,0,0,.38);
 
   --header-h:90px; --vv-top:0px; --extra-top:0px;
   --sat: env(safe-area-inset-top, 0px);
@@ -428,10 +427,11 @@ body.search-has-text #raffles{ display:none !important; } /* << solo mostrar sel
   padding:22px 14px;
   color:rgba(255,255,255,.94);
   background:
-    radial-gradient(1100px 760px at 12% 12%, rgba(255,61,154,.30) 0, transparent 60%),
-    radial-gradient(1000px 720px at 86% 22%, rgba(255,226,184,.26) 0, transparent 62%),
-    radial-gradient(900px 620px at 26% 86%, rgba(255,211,77,.22) 0, transparent 62%),
-    linear-gradient(135deg, #2a0b66 0%, #6b0fd4 38%, #ff3d9a 100%);
+    radial-gradient(1100px 760px at 14% 10%, rgba(255,122,0,.35) 0, transparent 60%),
+    radial-gradient(980px 700px at 86% 16%, rgba(214,31,31,.26) 0, transparent 62%),
+    radial-gradient(900px 640px at 40% 92%, rgba(255,226,184,.18) 0, transparent 64%),
+    linear-gradient(135deg, rgba(255,255,255,.10) 0%, rgba(255,255,255,.04) 40%, rgba(255,255,255,.08) 100%),
+    linear-gradient(135deg, #0b0f14 0%, #1c0f0a 45%, #ff7a00 125%);
   overflow:hidden;
 }
 .boot.show{display:flex}
@@ -459,10 +459,10 @@ body.search-has-text #raffles{ display:none !important; } /* << solo mostrar sel
   width:min(560px, 92vw);
   border-radius:24px;
   padding:18px 16px 16px;
-  background:rgba(18,10,42,.52);
-  border:1px solid rgba(255,255,255,.18);
-  box-shadow:0 30px 90px rgba(0,0,0,.55);
-  backdrop-filter:blur(10px) saturate(125%);
+  background:rgba(11,15,20,.60);
+  border:1px solid rgba(255,255,255,.20);
+  box-shadow:0 30px 90px rgba(0,0,0,.58);
+  backdrop-filter:blur(12px) saturate(140%);
 }
 .bootTop{
   display:flex; align-items:center; gap:12px;
@@ -506,7 +506,7 @@ body.search-has-text #raffles{ display:none !important; } /* << solo mostrar sel
   width:18%;
   border-radius:inherit;
   background:linear-gradient(90deg,var(--accent1),var(--accent2),var(--accent3));
-  box-shadow:0 0 18px rgba(0,255,169,.35);
+  box-shadow:0 0 18px rgba(255,122,0,.38), 0 0 28px rgba(214,31,31,.22);
   transition:width .35s cubic-bezier(.2,1,.2,1);
 }
 .bootGlow{
@@ -563,7 +563,7 @@ body.search-has-text #raffles{ display:none !important; } /* << solo mostrar sel
     radial-gradient(900px 640px at 50% 10%, rgba(255,59,48,.20) 0, transparent 60%),
     radial-gradient(900px 640px at 20% 90%, rgba(255,211,77,.16) 0, transparent 62%),
     radial-gradient(1000px 720px at 80% 85%, rgba(255,226,184,.14) 0, transparent 65%),
-    linear-gradient(135deg, #160731 0%, #2a0b66 45%, #0b0520 100%);
+    linear-gradient(135deg, #160731 0%, #0b0f14 45%, #0b0520 100%);
 }
 .blocked.show{display:flex}
 .blockCard{width:min(620px, 94vw);
@@ -740,7 +740,7 @@ body.search-has-text #raffles{ display:none !important; } /* << solo mostrar sel
 /* =========================================================
    ✅ CONFIG (VISIBLES AL INICIO — como pediste)
    ========================================================= */
-const KEY = '19Z_lde-QPyT-5DoQnitQgOYbAsJvqodsQIB1sgjBhuM';
+const KEY = '1uFdudPLY97Qb73KcD1u4siupMwmQpf00n1vKkAyIGxQ';
 const GID_RAFFLES = '1661661343';   // A: Número, B: Libre/Asignado
 const GID_CONFIG  = '1977832725';    // Config_Publica
 const GID_NOTIFICATIONS = '662101636'; // Notificaciones (logo)
